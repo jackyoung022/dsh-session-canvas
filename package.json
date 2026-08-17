@@ -1,0 +1,34 @@
+{
+  "name": "@linxin666/dsh-session-canvas",
+  "description": "多会话可视化画布（Session Canvas）：以 Canvas 形式汇总展示 DSH 会话、节点间连线表达关系，并基于选中会话内容创建可继续对话的新会话。常驻正式插件，重启自动加载。",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [],
+      "platform": "web"
+    }
+  },
+  "license": "Apache-2.0",
+  "files": [
+    "lib/**/*.js",
+    "cordis.patch.yml",
+    "README.md"
+  ]
+}
