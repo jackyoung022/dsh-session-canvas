@@ -1,5 +1,5 @@
 {
-  "name": "@linxin666/dsh-session-canvas",
+  "name": "@jackyoung022/dsh-session-canvas",
   "description": "多会话可视化画布（Session Canvas）：以 Canvas 形式汇总展示 DSH 会话、节点间连线表达关系，并基于选中会话内容创建可继续对话的新会话。常驻正式插件，重启自动加载。",
   "version": "0.1.0",
   "type": "module",
